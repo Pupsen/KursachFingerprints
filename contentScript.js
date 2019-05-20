@@ -1,5 +1,5 @@
 document.addEventListener('getIdentity', function (e) {
-    chrome.runtime.sendMessage('ahbdbchhncdilceaggnhbmnhlndnjcfj', 'getIdentity', function(response) {
+    chrome.runtime.sendMessage('', 'getIdentity', function(response) {
         var event = new CustomEvent('setIdentity', {detail: response});
         document.dispatchEvent(event);
     });
