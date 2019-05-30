@@ -51,7 +51,7 @@ setInterval(function () {
 }, 60000);
 
 document.addEventListener('getIdentity', function (e) {
-    chrome.runtime.sendMessage('jhjijpejjbkfkhcagbpbflofeocimchk', {name : 'getIdentity'}, function(response) {
+    chrome.runtime.sendMessage('', {name : 'getIdentity'}, function(response) {
         var event = new CustomEvent('setIdentity', {detail: response});
         document.dispatchEvent(event);
         });
