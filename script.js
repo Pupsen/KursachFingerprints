@@ -2,7 +2,7 @@ var toDataURLOld = HTMLCanvasElement.prototype.toDataURL;
 
 document.addEventListener('setIdentity', function (e) {
     var identity = e.detail || {};
-    
+
     if (identity.userAgent)
         navigator.__defineGetter__('userAgent', function(){
             return identity.userAgent;
@@ -31,6 +31,11 @@ document.addEventListener('setIdentity', function (e) {
         screen.__defineGetter__("availHeight", function() {
             return identity.availHeight;
         });
+    if (identity.depth)
+        screen.__defineGetter__("depth", function() {
+            return identity.depth;
+        });
+
     HTMLCanvasElement.prototype.toDataURL = function () {
         var width = this.width;
         var height = this.height;
