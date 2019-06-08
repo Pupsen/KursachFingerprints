@@ -1,7 +1,7 @@
 {
-  "name": "somePluginForFakeFingerprints",
+  "name": "FingerBox",
   "version": "0.5",
-  "description": "Это мой курсач, он не делает ничего плохого",
+  "description": "FingerBox is a Chrome extension that allows users to cotrol their fingerprints.",
   "manifest_version": 2,
   "background": {
     "scripts": ["background.js", "identityValues.js"],
