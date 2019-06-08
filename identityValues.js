@@ -10,7 +10,7 @@ var identityValues = [
         languages: ['en-US', 'en'],
         width: 1920,
         height: 1080,
-        availWidth: 10920,
+        availWidth: 1920,
         availHeight: 1040,
         depth: 24
     },
