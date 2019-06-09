@@ -11,7 +11,7 @@ var setIdentity = function(idx) {
 };
 
 chrome.storage.local.get('identity', function(data) {
-    var idx = data.identity;
+    var idx = data.identity || 0;
     identities[idx].style.backgroundColor = '#a5a5a6';
 });
 
